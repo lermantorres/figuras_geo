@@ -28,21 +28,22 @@ header h1,h3{
 }
 
 div.principal{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    margin: 0;
     align-items: center;
+    justify-content: center;
     
 }
 
 
 div.contenedor  {
+    float: left;
     width: 30%;
     height: 600px;
     border: solid 1px rgb(15, 240, 248);
     border-radius: 15px;
     text-align: center;
     align-items: center;
+    margin-left: 45px;
     
     }
 
@@ -60,4 +61,26 @@ font-size: 30px;
 div.contenedor input[type="button"] {
     width: 70%;
     margin-top: 15px;
+    }
+
+
+    @media screen and (max-width: 1561px ) {
+        div.contenedor{
+            max-width: 100%;
+            margin-left: 20px;
+        }
+    }
+
+    @media screen and (max-width: 677px ) {
+        div.contenedor{
+            width: 90%;
+            margin-bottom: 25px;
+            height: auto;
+        }
+        div.contenedor input[type="button"] {
+            width: 70%;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            }
+
     }
