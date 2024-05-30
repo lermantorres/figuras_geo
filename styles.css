@@ -57,6 +57,17 @@ padding: 0%;
 font-size: 30px;
 }
 
+div.contenedor input[type="text"] {
+    width: 70%;
+    margin-top: 15px;
+    display: inline-block;
+    }
+
+div.contenedor label {
+        width: 70%;
+        margin-top: 15px;
+        display: inline-block;
+        }
 
 div.contenedor input[type="button"] {
     width: 70%;
@@ -82,5 +93,11 @@ div.contenedor input[type="button"] {
             margin-top: 15px;
             margin-bottom: 15px;
             }
+
+            div.contenedor label {
+                width: 70%;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                }
 
     }
