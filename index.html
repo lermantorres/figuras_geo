@@ -23,14 +23,14 @@
             <h2>TRIANGULO</h2>
             <h3>¿Cuanto mide los lados del triangulo?</h3> 
             <form action="">
-                <label for="">LADO 1 </label><input type="text" name="" id="">
-                <label for="">LADO 2 </label><input type="text" name="" id="">
-                <label for="">LADO 3 </label><input type="text" name="" id="">
-                <input type="button" value="Perimetro">
-                <label for="">BASE </label><input type="text" name="" id="">
-                <label for="">ALTURA </label><input type="text" name="" id="">
+                <label for="">LADO 1 </label><input type="text" name="triangulo_lado1" id="triangulo_lado1">
+                <label for="">LADO 2 </label><input type="text" name="triangulo_lado2" id="triangulo_lado2">
+                <label for="">LADO 3 </label><input type="text" name="triangulo_lado3" id="triangulo_lado3">
+                <input type="button" value="Perimetro" onclick="calcular_perimetro_triangulo()">
+                <label for="">BASE </label><input type="text" name="triangulo_areab" id="triangulo_areab">
+                <label for="">ALTURA </label><input type="text" name="triangulo_areah" id="triangulo_areah">
                 
-                <input type="button" value="Area">
+                <input type="button" value="Area" onclick="calcular_area_triangulo()">
             </form>
         </div>
         <div class="contenedor">
