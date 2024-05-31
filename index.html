@@ -8,15 +8,15 @@
 </head>
 <body>
     <header><h1>CALCULAR FIGURAS GEOMETRICAS</h1><h3>Calcular diferentes medidas de figuras geometricas</h3> </header>
-    <h2>El calculo es : </h2>
+    <h2 id="result">El calculo es : </h2>
     <div class="principal">    
         <div class="contenedor">
             <h2>CUADRADO</h2>
             <h3>¿Cuanto mide un lado del cuadrado?</h3> 
             <form action="">
-                <input type="text" name="" id="">
-                <input type="button" value="Area">
-                <input type="button" value="Perimetro">
+                <input type="text" name="cuadrado_text" id="cuadrado_text">
+                <input type="button" value="Area" onclick="calcular_cuadradoarea()">
+                <input type="button" value="Perimetro" onclick="calcular_perimetro()">
             </form>
         </div>
         <div class="contenedor">
@@ -45,4 +45,5 @@
         </div>
         </div>
 </body>
+<script src="/geometric.js"></script>
 </html>
