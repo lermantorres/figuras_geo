@@ -15,8 +15,8 @@
             <h3>¿Cuanto mide un lado del cuadrado?</h3> 
             <form action="">
                 <input type="text" name="cuadrado_text" id="cuadrado_text">
-                <input type="button" value="Area" onclick="calcular_cuadradoarea()">
-                <input type="button" value="Perimetro" onclick="calcular_perimetro()">
+                <input type="button" value="Area" id="button_cuadrado_area">
+                <input type="button" value="Perimetro" id="button_cuadrado_perimetro">
             </form>
         </div>
         <div class="contenedor">
@@ -26,12 +26,11 @@
                 <label for="">LADO 1 </label><input type="text" name="triangulo_lado1" id="triangulo_lado1">
                 <label for="">LADO 2 </label><input type="text" name="triangulo_lado2" id="triangulo_lado2">
                 <label for="">LADO 3 </label><input type="text" name="triangulo_lado3" id="triangulo_lado3">
-                <input type="button" value="Perimetro" onclick="calcular_perimetro_triangulo()">
+                <input type="button" value="Perimetro" id="button_triangulo_perimetro">
                 <label for="">¿CUAL ES LA ALTURA Y LA BASE DEL TRIANGULO?</label>
                 <label for="">BASE </label><input type="text" name="triangulo_areab" id="triangulo_areab">
                 <label for="">ALTURA </label><input type="text" name="triangulo_areah" id="triangulo_areah">
-                
-                <input type="button" value="Area" onclick="calcular_area_triangulo()">
+                <input type="button" value="Area" id="button_triangulo_area">
             </form>
         </div>
         <div class="contenedor">
@@ -39,9 +38,9 @@
             <h3>¿Cuanto el radio?</h3> 
             <form action="">
                 <input type="text" name="circulo_text" id="circulo_text">
-                <input type="button" value="Area" onclick="calcular_area_circulo()">
-                <input type="button" value="Perimetro" onclick="calcular_perimetro_circulo()">
-                <input type="button" value="Diametro" onclick="calcular_diametro_circulo()">
+                <input type="button" value="Area" id="button_circulo_area">
+                <input type="button" value="Perimetro" id="button_circulo_perimetro">
+                <input type="button" value="Diametro" id="button_circulo_diametro">
             </form>
         </div>
         </div>
