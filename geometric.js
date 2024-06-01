@@ -25,11 +25,18 @@ let diametro_circulo = (radio)=> 2*radio;
 // defino funciones para extraer y enviar DOM , añado evento listener para ejecutar patron modular
 
 button_cuadrado_area.addEventListener('click',()=>{
-    let inputSide = document.getElementById('cuadrado_text'); //obtengo el elemento que necesito
-    let valuec = Number(inputSide.value); //obtengo el valor dentro del elemento y lo cambio a numero
-
-    const result = `El resultado del area del cuadrado es ${area_cuadrado(valuec)} cm`; // varible donde enviaremos el mensaje y concatenamos la funcion con parametro el valor obtenido
-    document.getElementById('result').innerText =result; // obtenemos el elemento y remplazamos el texto por la variable result
+    
+    let valuec = Number (document.getElementById('cuadrado_text').value);
+    // Verifico si el valor es un número válido y no está vacío
+    if (!isNaN(valuec) && document.getElementById('cuadrado_text').value !== "") {
+        // Variable donde enviamos el mensaje y concatenamos la función con parámetro el valor obtenido
+        let result = `El resultado del área del cuadrado es ${area_cuadrado(valuec)} cm²`;
+        // Obtenemos el elemento y reemplazamos el texto por la variable result
+        document.getElementById('result').innerText = result;
+    } else {
+        // Mensaje de alerta si el campo está vacío o el valor no es válido
+        alert('El campo está vacío o el valor no es un número válido');
+    }
 })
 
 
