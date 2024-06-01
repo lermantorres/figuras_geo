@@ -46,7 +46,28 @@ function calcular_perimetro_triangulo (){
     document.getElementById('result').innerText =result; // obtenemos el elemento y remplazamos el texto por la variable result
 }
 
+function calcular_area_circulo (){
+    let valuec = Number (document.getElementById('circulo_text').value);
 
+    const result = `El resultado del area del circulo es ${area_circulo(valuec)} cm`; // varible donde enviaremos el mensaje y concatenamos la funcion con parametro el valor obtenido
+    document.getElementById('result').innerText =result; // obtenemos el elemento y remplazamos el texto por la variable result
+}
+
+
+function calcular_perimetro_circulo (){
+    let valuec = Number (document.getElementById('circulo_text').value);
+
+    const result = `El resultado del perimetro del circulo es ${perimetro_circulo(valuec)} cm`; // varible donde enviaremos el mensaje y concatenamos la funcion con parametro el valor obtenido
+    document.getElementById('result').innerText =result; // obtenemos el elemento y remplazamos el texto por la variable result
+}
+
+
+function calcular_diametro_circulo (){
+    let valuec = Number (document.getElementById('circulo_text').value);
+
+    const result = `El resultado del perimetro del circulo es ${diametro_circulo(valuec)} cm`; // varible donde enviaremos el mensaje y concatenamos la funcion con parametro el valor obtenido
+    document.getElementById('result').innerText =result; // obtenemos el elemento y remplazamos el texto por la variable result
+}
 
 
 
